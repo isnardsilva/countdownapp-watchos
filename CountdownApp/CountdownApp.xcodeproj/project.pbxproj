@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F6C6D9249738BA00738E6A /* CountdownApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 04F6C6D8249738BA00738E6A /* CountdownApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04F6C6DF249738BA00738E6A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C6DD249738BA00738E6A /* Interface.storyboard */; };
+		04F6C6E1249738BD00738E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C6E0249738BD00738E6A /* Assets.xcassets */; };
+		04F6C6E8249738BD00738E6A /* CountdownApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04F6C6E7249738BD00738E6A /* CountdownApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04F6C6ED249738BD00738E6A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C6EC249738BD00738E6A /* InterfaceController.swift */; };
+		04F6C6EF249738BD00738E6A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6C6EE249738BD00738E6A /* ExtensionDelegate.swift */; };
+		04F6C6F1249738BF00738E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C6F0249738BF00738E6A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F6C6DA249738BA00738E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F6C6CE249738BA00738E6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F6C6D7249738BA00738E6A;
+			remoteInfo = "CountdownApp WatchKit App";
+		};
+		04F6C6E9249738BD00738E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F6C6CE249738BA00738E6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F6C6E6249738BD00738E6A;
+			remoteInfo = "CountdownApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04F6C6F8249738BF00738E6A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04F6C6E8249738BD00738E6A /* CountdownApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C6FC249738BF00738E6A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				04F6C6D9249738BA00738E6A /* CountdownApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04F6C6D4249738BA00738E6A /* CountdownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F6C6D8249738BA00738E6A /* CountdownApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CountdownApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F6C6DE249738BA00738E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		04F6C6E0249738BD00738E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F6C6E2249738BD00738E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F6C6E7249738BD00738E6A /* CountdownApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CountdownApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F6C6EC249738BD00738E6A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		04F6C6EE249738BD00738E6A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		04F6C6F0249738BF00738E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F6C6F2249738BF00738E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F6C6E4249738BD00738E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F6C6CD249738BA00738E6A = {
+			isa = PBXGroup;
+			children = (
+				04F6C6DC249738BA00738E6A /* CountdownApp WatchKit App */,
+				04F6C6EB249738BD00738E6A /* CountdownApp WatchKit Extension */,
+				04F6C6D5249738BA00738E6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F6C6D5249738BA00738E6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F6C6D4249738BA00738E6A /* CountdownApp.app */,
+				04F6C6D8249738BA00738E6A /* CountdownApp WatchKit App.app */,
+				04F6C6E7249738BD00738E6A /* CountdownApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F6C6DC249738BA00738E6A /* CountdownApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				04F6C6DD249738BA00738E6A /* Interface.storyboard */,
+				04F6C6E0249738BD00738E6A /* Assets.xcassets */,
+				04F6C6E2249738BD00738E6A /* Info.plist */,
+			);
+			path = "CountdownApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		04F6C6EB249738BD00738E6A /* CountdownApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04F6C6EC249738BD00738E6A /* InterfaceController.swift */,
+				04F6C6EE249738BD00738E6A /* ExtensionDelegate.swift */,
+				04F6C6F0249738BF00738E6A /* Assets.xcassets */,
+				04F6C6F2249738BF00738E6A /* Info.plist */,
+			);
+			path = "CountdownApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F6C6D3249738BA00738E6A /* CountdownApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F6C6FD249738BF00738E6A /* Build configuration list for PBXNativeTarget "CountdownApp" */;
+			buildPhases = (
+				04F6C6D2249738BA00738E6A /* Resources */,
+				04F6C6FC249738BF00738E6A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F6C6DB249738BA00738E6A /* PBXTargetDependency */,
+			);
+			name = CountdownApp;
+			productName = CountdownApp;
+			productReference = 04F6C6D4249738BA00738E6A /* CountdownApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		04F6C6D7249738BA00738E6A /* CountdownApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F6C6F9249738BF00738E6A /* Build configuration list for PBXNativeTarget "CountdownApp WatchKit App" */;
+			buildPhases = (
+				04F6C6D6249738BA00738E6A /* Resources */,
+				04F6C6F8249738BF00738E6A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F6C6EA249738BD00738E6A /* PBXTargetDependency */,
+			);
+			name = "CountdownApp WatchKit App";
+			productName = "CountdownApp WatchKit App";
+			productReference = 04F6C6D8249738BA00738E6A /* CountdownApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		04F6C6E6249738BD00738E6A /* CountdownApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F6C6F5249738BF00738E6A /* Build configuration list for PBXNativeTarget "CountdownApp WatchKit Extension" */;
+			buildPhases = (
+				04F6C6E3249738BD00738E6A /* Sources */,
+				04F6C6E4249738BD00738E6A /* Frameworks */,
+				04F6C6E5249738BD00738E6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CountdownApp WatchKit Extension";
+			productName = "CountdownApp WatchKit Extension";
+			productReference = 04F6C6E7249738BD00738E6A /* CountdownApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F6C6CE249738BA00738E6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Isnard Silva";
+				TargetAttributes = {
+					04F6C6D3249738BA00738E6A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					04F6C6D7249738BA00738E6A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					04F6C6E6249738BD00738E6A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 04F6C6D1249738BA00738E6A /* Build configuration list for PBXProject "CountdownApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F6C6CD249738BA00738E6A;
+			productRefGroup = 04F6C6D5249738BA00738E6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F6C6D3249738BA00738E6A /* CountdownApp */,
+				04F6C6D7249738BA00738E6A /* CountdownApp WatchKit App */,
+				04F6C6E6249738BD00738E6A /* CountdownApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F6C6D2249738BA00738E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C6D6249738BA00738E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F6C6E1249738BD00738E6A /* Assets.xcassets in Resources */,
+				04F6C6DF249738BA00738E6A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F6C6E5249738BD00738E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F6C6F1249738BF00738E6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F6C6E3249738BD00738E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F6C6EF249738BD00738E6A /* ExtensionDelegate.swift in Sources */,
+				04F6C6ED249738BD00738E6A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F6C6DB249738BA00738E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F6C6D7249738BA00738E6A /* CountdownApp WatchKit App */;
+			targetProxy = 04F6C6DA249738BA00738E6A /* PBXContainerItemProxy */;
+		};
+		04F6C6EA249738BD00738E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F6C6E6249738BD00738E6A /* CountdownApp WatchKit Extension */;
+			targetProxy = 04F6C6E9249738BD00738E6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F6C6DD249738BA00738E6A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F6C6DE249738BA00738E6A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F6C6F3249738BF00738E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F6C6F4249738BF00738E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F6C6F6249738BF00738E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				INFOPLIST_FILE = "CountdownApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.CountdownApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		04F6C6F7249738BF00738E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				INFOPLIST_FILE = "CountdownApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.CountdownApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		04F6C6FA249738BF00738E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				IBSC_MODULE = CountdownApp_WatchKit_Extension;
+				INFOPLIST_FILE = "CountdownApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.CountdownApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		04F6C6FB249738BF00738E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				IBSC_MODULE = CountdownApp_WatchKit_Extension;
+				INFOPLIST_FILE = "CountdownApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.CountdownApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		04F6C6FE249738BF00738E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.CountdownApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		04F6C6FF249738BF00738E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.CountdownApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F6C6D1249738BA00738E6A /* Build configuration list for PBXProject "CountdownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F6C6F3249738BF00738E6A /* Debug */,
+				04F6C6F4249738BF00738E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F6C6F5249738BF00738E6A /* Build configuration list for PBXNativeTarget "CountdownApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F6C6F6249738BF00738E6A /* Debug */,
+				04F6C6F7249738BF00738E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F6C6F9249738BF00738E6A /* Build configuration list for PBXNativeTarget "CountdownApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F6C6FA249738BF00738E6A /* Debug */,
+				04F6C6FB249738BF00738E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F6C6FD249738BF00738E6A /* Build configuration list for PBXNativeTarget "CountdownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F6C6FE249738BF00738E6A /* Debug */,
+				04F6C6FF249738BF00738E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F6C6CE249738BA00738E6A /* Project object */;
+}
