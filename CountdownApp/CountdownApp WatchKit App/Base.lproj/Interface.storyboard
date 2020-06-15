@@ -1,21 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Home Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CountdownApp_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="CountdownApp_WatchKit_Extension">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Hello, world!" id="VLC-eA-PA8"/>
+                        <table alignment="left" id="mna-RV-Ntc">
+                            <items>
+                                <tableRow identifier="EventRow" id="tfc-vO-JOG" customClass="EventRowController" customModule="CountdownApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="WH3-Dl-GQK">
+                                        <items>
+                                            <separator height="1" alignment="left" id="txw-Qs-h9P">
+                                                <color key="color" red="0.0" green="0.97647058819999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" id="JNB-IM-m21">
+                                                <items>
+                                                    <group height="28" alignment="left" id="Uso-co-Cm7">
+                                                        <items>
+                                                            <label width="1" height="24" alignment="left" text="Date Label" textAlignment="center" id="92G-z6-fan"/>
+                                                        </items>
+                                                    </group>
+                                                    <group height="28" alignment="left" id="ohq-WL-9n7">
+                                                        <items>
+                                                            <label width="1" height="24" alignment="left" text="Name Label" textAlignment="center" id="Ufs-P4-d3L"/>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <group width="0.20000000000000001" height="0.59999999999999998" alignment="left" verticalAlignment="center" id="CNx-Kq-J6U">
+                                                <items>
+                                                    <imageView width="1" height="0.90000000000000002" alignment="left" image="dayWhite" id="eyz-xC-hmt">
+                                                        <color key="tintColor" red="0.0" green="0.97647058819999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </imageView>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="92G-z6-fan" id="qMB-Vu-Tiu"/>
+                                        <outlet property="eventImage" destination="eyz-xC-hmt" id="oDu-gC-fLC"/>
+                                        <outlet property="nameLabel" destination="Ufs-P4-d3L" id="e9E-Ld-buW"/>
+                                        <outlet property="separator" destination="txw-Qs-h9P" id="YrY-OA-Ux4"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
+                    <connections>
+                        <outlet property="tableView" destination="mna-RV-Ntc" id="icW-eA-RQA"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
         </scene>
+        <!--Event-->
+        <scene sceneID="LrG-bK-Jow">
+            <objects>
+                <controller identifier="Event" id="YAi-bV-aZQ">
+                    <items>
+                        <imageView width="0.29999999999999999" height="0.29999999999999999" alignment="center" image="dayWhite" id="NAJ-jr-UBW"/>
+                        <label width="1" alignment="center" text="Category Label" textAlignment="center" id="OD4-qh-bCS"/>
+                        <label width="1" height="24" alignment="left" text="Label" textAlignment="center" id="cXm-Is-0P9"/>
+                        <timer width="1" height="0.20000000000000001" alignment="left" textAlignment="center" id="dwW-C7-HEM">
+                            <calendarUnit key="units" month="YES" day="YES" hour="YES" minute="YES" second="YES" weekOfMonth="YES"/>
+                        </timer>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="326" y="30"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="dayWhite" width="52" height="52"/>
+    </resources>
 </document>

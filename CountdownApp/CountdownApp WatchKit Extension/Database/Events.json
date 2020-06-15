@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Barca",
+        "category": "Vacation",
+        "endDate": "2.10.2019."
+    },
+    {
+        "name": "London",
+        "category": "Study",
+        "endDate": "31.10.2019."
+    },
+    {
+        "name": "Mama",
+        "category": "Birthday",
+        "endDate": "25.11.2019."
+        
+    },
+    {
+        "name": "Sevilla",
+        "category": "Vacation",
+        "endDate": "30.11.2019."
+    },
+    {
+       "name": "Enrique",
+        "category": "Event",
+        "endDate": "01.12.2019."
+    },
+    {
+        "name": "Madrid",
+        "category": "Vacation",
+        "endDate": "13.12.2019."
+    },
+    {
+        "name": "Tomo",
+        "category": "Birthday",
+        "endDate": "01.03.2020."
+        
+    },
+    {
+       "name": "Valencia",
+        "category": "Vacation",
+        "endDate": "04.08.2020."
+    }
+]
