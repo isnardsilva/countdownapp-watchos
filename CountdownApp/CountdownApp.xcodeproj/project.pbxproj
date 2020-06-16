@@ -10,6 +10,7 @@
 		04E4AA6624973A200087813A /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E4AA6524973A200087813A /* Events.json */; };
 		04E4AA6824973A380087813A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA6724973A380087813A /* Event.swift */; };
 		04E4AA7024974A410087813A /* EventRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4AA6F24974A410087813A /* EventRowController.swift */; };
+		04E69D47249868F1008D2E99 /* EventInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E69D46249868F1008D2E99 /* EventInterfaceController.swift */; };
 		04F6C6D9249738BA00738E6A /* CountdownApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 04F6C6D8249738BA00738E6A /* CountdownApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04F6C6DF249738BA00738E6A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C6DD249738BA00738E6A /* Interface.storyboard */; };
 		04F6C6E1249738BD00738E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6C6E0249738BD00738E6A /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		04E4AA6524973A200087813A /* Events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Events.json; sourceTree = "<group>"; };
 		04E4AA6724973A380087813A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		04E4AA6F24974A410087813A /* EventRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowController.swift; sourceTree = "<group>"; };
+		04E69D46249868F1008D2E99 /* EventInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInterfaceController.swift; sourceTree = "<group>"; };
 		04F6C6D4249738BA00738E6A /* CountdownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6C6D8249738BA00738E6A /* CountdownApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CountdownApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6C6DE249738BA00738E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				04F6C6EC249738BD00738E6A /* HomeInterfaceController.swift */,
 				04E4AA6F24974A410087813A /* EventRowController.swift */,
+				04E69D46249868F1008D2E99 /* EventInterfaceController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				04E4AA7024974A410087813A /* EventRowController.swift in Sources */,
 				04E4AA6824973A380087813A /* Event.swift in Sources */,
 				04F6C6ED249738BD00738E6A /* HomeInterfaceController.swift in Sources */,
+				04E69D47249868F1008D2E99 /* EventInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

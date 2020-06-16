@@ -63,15 +63,23 @@
         <!--Event-->
         <scene sceneID="LrG-bK-Jow">
             <objects>
-                <controller identifier="Event" id="YAi-bV-aZQ">
+                <controller identifier="Event" id="YAi-bV-aZQ" customClass="EventInterfaceController" customModule="CountdownApp_WatchKit_Extension">
                     <items>
-                        <imageView width="0.29999999999999999" height="0.29999999999999999" alignment="center" image="dayWhite" id="NAJ-jr-UBW"/>
+                        <imageView width="0.29999999999999999" height="0.29999999999999999" alignment="center" image="dayWhite" id="NAJ-jr-UBW">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
                         <label width="1" alignment="center" text="Category Label" textAlignment="center" id="OD4-qh-bCS"/>
-                        <label width="1" height="24" alignment="left" text="Label" textAlignment="center" id="cXm-Is-0P9"/>
+                        <label width="1" height="24" alignment="left" text="Name Label" textAlignment="center" id="cXm-Is-0P9"/>
                         <timer width="1" height="0.20000000000000001" alignment="left" textAlignment="center" id="dwW-C7-HEM">
                             <calendarUnit key="units" month="YES" day="YES" hour="YES" minute="YES" second="YES" weekOfMonth="YES"/>
                         </timer>
                     </items>
+                    <connections>
+                        <outlet property="categoryLabel" destination="OD4-qh-bCS" id="ldc-3d-iIu"/>
+                        <outlet property="eventImage" destination="NAJ-jr-UBW" id="ulA-aN-qer"/>
+                        <outlet property="nameLabel" destination="cXm-Is-0P9" id="QoB-WV-v4b"/>
+                        <outlet property="timer" destination="dwW-C7-HEM" id="rID-xq-QxS"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="326" y="30"/>

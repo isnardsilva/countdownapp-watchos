@@ -15,7 +15,9 @@ class HomeInterfaceController: WKInterfaceController {
     // MARK: - Properties
     private var events = Event.allEvents()
     
-    // MARK: - View Lifecycle
+    
+    // MARK: - Interface Lifecycle
+    // Executed after the graphical interface elements are configured and before the interface is displayed
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -27,5 +29,16 @@ class HomeInterfaceController: WKInterfaceController {
             guard let controller = tableView.rowController(at: index) as? EventRowController else { continue }
             controller.event = events[index]
         }
+    }
+    
+    
+}
+
+
+// MARK: - WKInterfaceTable
+extension HomeInterfaceController {
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        let event = events[rowIndex]
+        self.pushController(withName: "Event", context: event)
     }
 }
